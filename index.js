@@ -29,6 +29,7 @@ function deepestChild() {
   while (current) {
     if (!(current.children[0])) {
       return current;
-    } 
+    }
+    current = current.children[0];
   }
 }
